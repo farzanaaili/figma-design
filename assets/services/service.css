@@ -1,45 +1,81 @@
 
+
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@400;600&family=Source+Sans+Pro:wght@700&display=swap');
-body{
-    overflow-x: hidden;
+
+/* ------------ */
+body {
+	padding: 0;
+	margin: 0;
 }
-.header-area{
-    overflow: hidden;
-    background: #1F2A5A;
-    position: fixed;
+
+
+nav {
+	position: fixed;
     width: 100%;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	font-family: 'Montserrat', sans-serif;
+	padding: 0 5%;
+	height: 100px;
+    background:#1F2A5A ;
 }
-.header{
-    width: 100%;
-    height: 100px;
-       
-}
-.logo{
-   margin:  25px 0px; 
+nav .logo {
+    padding-top: 20px;
 
 }
-.menubar .menu ul {
-    display: flex;
-    margin-right: -50px;
+
+nav .links {
+	float: right;
+	margin-top:0;
+	width: 50%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
-.menubar .menu ul li {
-    margin: 30px;
-    list-style: none;
-}
-.menubar .menu ul li a{
-    text-align: right;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
-.header-btn{
-    background: #2D9CDB;
-    padding: 8px;
+nav .links .header-btn{
     border: none;
-    font-weight: bold;
+    background: #2585BC ;
     color: #fff;
-    width: 150px;
+    padding: 10px;
 }
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+    margin-top: -90px;
+	display: block;
+	padding: 1em;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: #fff;
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+
+
+
+/* ----------- */
 
 /* hero-area-start */
 .hero-area{
@@ -64,6 +100,12 @@ body{
     line-height: 130%;
     color: #1F2A5A;
 
+ }
+ .hero-cntent button{
+    border: none;
+    background: #2585BC ;
+    color: #fff;
+    padding: 10px;
  }
  .hero-area .hero-cntent p{
     font-family: 'Montserrat', sans-serif;
@@ -149,6 +191,9 @@ body{
 /* Format und Ablauf  start */
 .format-abulaf {
     margin: 50px;
+}
+.format-abulaf h1{
+    color: #1F2A5A;
 }
 .format-abulaf  .s-icons{
  padding: 15px 10px;
